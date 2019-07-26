@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Playfair Display', serif;
+}
+body{
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.brand-box{
+    display:flex;
+}
+.img-box{
+    height:25%;
+    width:25%;
+}
+.txt{
+    position: relative;
+    top:50%;
+    left:60%;
+    transform: translate(-50%,-50%);
+    color:#f3f3f3;
+}
+.card{
+    margin-bottom:15px;
+    width:90%;
+   
+}
