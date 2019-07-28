@@ -26,6 +26,12 @@ body{
 }
 .card{
     margin-bottom:15px;
-    width:90%;
    
+}
+.main{
+    height:500px;
+    margin-top:30px;
+}
+li{
+    list-style:none;
 }

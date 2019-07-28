@@ -26,12 +26,12 @@
         </div><!--header-->
     </div><!--brand-box-->
         <div class = "card main">
-            <h4 class = "card-header">
+            <h4 class = "card-header" id = "doc-Title">
                  Document Name
                 </h4>
         
             <div class = "card-body">
-                select document
+                <p id = "content"></p>
             </div>
 
             <div class = "card-footer">
@@ -56,7 +56,9 @@
         <div class = "card">
                 <h5 class = "card-header">Select a Book</h5>
              <div class = "card-body">
-                
+                <ul class = "book-links">
+                    <li><a href = "#" onclick = 'loadbook("alice.txt","Alice In Wonderland")'>Alice In Wonderland</a></li>
+                </ul>
                 </div>
             </div>
         <div class = "card">
