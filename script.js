@@ -21,5 +21,11 @@ function loadbook(fileName ,displayName){
     }
     xhttp.open('GET',url,true)//initilize request
     xhttp.send();//sends request
+}
+
+function getStats(){
+    //I could toltally go and visit them, at the blog post and the end of the weekend is coming and it is here to stay       
+    //this is a second line 
+
 
 }
