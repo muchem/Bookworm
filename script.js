@@ -4,23 +4,21 @@ function loadbook(fileName ,displayName){
     let currentBook = "";
     document.getElementById('doc-Title').innerHTML = displayName;
 
-
-    var https = new XMLHttpRequest();
-   
-    
-        //Make a Server Request (AJAX call)
- 
-      https.onreadystatechange = function(){
-      if(https.readyState == 4 && https.status == 200){
-         
+    var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function(){
+      if(xhttp.readyState == 4 && xhttp.status == 200){
+          currentBook = xhttp.responseText;//Must be responceText
            document.getElementById('content').innerHTML = currentBook;
-          }
-        
+
+          
+
+           document.getElementById('content').scrollTop = 0; 
+
+
+          } 
+       
     }
-
-    
-
-    https.open('GET',url,true)//initilize request
-    https.send();//sends request
+    xhttp.open('GET',url,true)//initilize request
+    xhttp.send();//sends request
 
 }
