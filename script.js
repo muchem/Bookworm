@@ -8,12 +8,13 @@ function loadbook(fileName ,displayName){
       xhttp.onreadystatechange = function(){
       if(xhttp.readyState == 4 && xhttp.status == 200){
           currentBook = xhttp.responseText;//Must be responceText
+
+          //replace txt file line feeds with html <br>
+          currentBook = currentBook.replace(/(?:\r\n|\r|\n)/g, "<br>");
+
            document.getElementById('content').innerHTML = currentBook;
-
-          
-
+           
            document.getElementById('content').scrollTop = 0; 
-
 
           } 
        
