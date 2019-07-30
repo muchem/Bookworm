@@ -64,25 +64,36 @@
         <div class = "card">
            <h5 class = "card-header">Most Used Words</h5>
         <div class = "card-body">
-            
+                <ul class = "most-used">
+
+                    </ul>
                 </div>
                     </div>
          <div class = "card">
            <h5 class = "card-header">Least Used Words</h5>
             <div class = "card-body">
-                   
+                    <ul class = "least-used">
+
+                    </ul>
                     </div>
             </div>
     <div class = "card">
         <h5 class ="card-header">Document Stats</h5>
         <div class = "card-body">
-               
-                    </div>
-             </div>
+               <ul class = "stat-list">
+                   <li id = "doc-length"></li>
+                   <li id = "word-count"></li>
+                   <li id = "char-count"></li>
+               </ul>
+            </div>
         </div>
     </div>
-
-
+</div>
+<script id = 'template-ul-items' type = "text/template">
+    <li>
+        {{val}}
+    </li>
+    </script>
         <script src = "script.js"></script>
     </body>
 </html>
