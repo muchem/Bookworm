@@ -1,2 +1,2 @@
 # Bookworm
-https://muchem.github.io/Bookworm/
+https://muchem.github.io/Bookworm/ .
